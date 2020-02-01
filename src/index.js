@@ -1,8 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+
+import Routes from './routes';
 
 const App = () => {
-  return <View></View>;
+  return (
+    <SafeAreaView>
+      <Routes />
+    </SafeAreaView>
+  );
 };
 
 export default App;
