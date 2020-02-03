@@ -14,7 +14,7 @@ import {
   SignLinkText,
 } from './styles';
 
-const SignIn = () => {
+const SignIn = ({ navigation }) => {
   return (
     <Background>
       <Container>
@@ -38,7 +38,7 @@ const SignIn = () => {
           <SubmitButton onPress={() => {}}>Access</SubmitButton>
         </Form>
 
-        <SignLink onPress={() => {}}>
+        <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText>Create your account</SignLinkText>
         </SignLink>
       </Container>
