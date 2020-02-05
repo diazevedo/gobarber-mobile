@@ -8,11 +8,13 @@ import {
   FormInput,
   SubmitButton,
   Separator,
+  LogOutButton,
 } from './styles';
 
 import Background from '~/components/Background';
 
 import { updateProfileRequest } from '~/store/modules/user/actions';
+import { signOut } from '~/store/modules/auth/actions';
 
 export default function Profile() {
   const dispatch = useDispatch();
@@ -41,6 +43,10 @@ export default function Profile() {
         confirmPassword,
       })
     );
+  };
+
+  const handleSignOut = () => {
+    dispatch(signOut());
   };
 
   useEffect(() => {
@@ -118,6 +124,10 @@ export default function Profile() {
           <SubmitButton loading={false} onPress={handleSubmit}>
             Update profile
           </SubmitButton>
+
+          <LogOutButton loading={false} onPress={handleSignOut}>
+            Sign out
+          </LogOutButton>
         </Form>
       </Container>
     </Background>
