@@ -9,7 +9,7 @@ export const Title = styled.Text`
   color: #fff;
   font-weight: bold;
   align-self: center;
-  margin-top: 15px;
+  margin-top: 10px;
 `;
 
 export const List = styled.FlatList.attrs({
