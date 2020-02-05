@@ -42,26 +42,23 @@ export default (isSigned = false) =>
                       marginLeft: 20,
                     },
                     headerTitleStyle: {
-                      // marginTop: 10,
                       fontSize: 20,
                       fontWeight: 'bold',
                     },
                   },
-                },
-                {
-                  navigationOptions: {
-                    tabBarVisible: false,
-                    tabBarLabel: 'Schedule',
-                    tabBarIcon: (
-                      <Icon
-                        name="add-circle-outline"
-                        size={20}
-                        color="rgba(255,255, 255, 0.6)"
-                      />
-                    ),
-                  },
                 }
               ),
+              navigationOptions: {
+                tabBarVisible: false,
+                tabBarLabel: 'Schedule',
+                tabBarIcon: (
+                  <Icon
+                    name="add-circle-outline"
+                    size={20}
+                    color="rgba(255,255, 255, 0.6)"
+                  />
+                ),
+              },
             },
             Profile,
           },
