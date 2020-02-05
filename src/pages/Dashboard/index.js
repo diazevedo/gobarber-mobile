@@ -9,14 +9,16 @@ import { Container, Title, List } from './styles';
 
 export default function Dashboard() {
   const [appointments, setAppointments] = useState([]);
+  const [refreshing, setRefreshing] = useState(false);
+
+  const loadAppointments = async () => {
+    const response = await api.get('appointments');
+
+    setAppointments(response.data);
+    setRefreshing(false);
+  };
 
   useEffect(() => {
-    async function loadAppointments() {
-      const response = await api.get('appointments');
-      console.tron.log(response);
-      setAppointments(response.data);
-    }
-
     loadAppointments();
   }, []);
 
@@ -35,6 +37,11 @@ export default function Dashboard() {
     );
   };
 
+  const refreshList = () => {
+    setRefreshing(true);
+    loadAppointments();
+  };
+
   return (
     <Background>
       <Container>
@@ -42,6 +49,8 @@ export default function Dashboard() {
 
         <List
           data={appointments}
+          onRefresh={refreshList}
+          refreshing={refreshing}
           keyExtractor={item => String(item.id)}
           renderItem={({ item }) => (
             <Appointment
