@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { TouchableOpacity } from 'react-native';
 import Background from '~/components/Background';
-import { format, parse } from 'date-fns';
+import { format } from 'date-fns';
 import en from 'date-fns/locale/en-GB';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -31,6 +31,7 @@ export default function SelectDateTime({ navigation }) {
         date: date.getTime(),
       },
     });
+
     setHours(response.data);
   };
 
@@ -43,8 +44,8 @@ export default function SelectDateTime({ navigation }) {
     [date]
   );
 
-  const onChangeDate = (timeStamp, dateTimeISO) => {
-    setDate(dateTimeISO);
+  const onChangeDate = (timeStamp, dateISO) => {
+    setDate(dateISO);
   };
 
   const handleSelectHour = time => {

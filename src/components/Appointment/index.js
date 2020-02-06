@@ -3,7 +3,7 @@ import { parseISO, formatRelative } from 'date-fns';
 import en from 'date-fns/locale/en-GB';
 import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Container, Left, Avatar, Info, Name, Time, Cancelled } from './styles';
+import { Container, Left, Avatar, Info, Name, Time } from './styles';
 
 export default function Appointment({ data, onCancel }) {
   const dateParsed = useMemo(() => {
