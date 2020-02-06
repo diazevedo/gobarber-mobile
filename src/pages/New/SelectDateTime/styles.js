@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import DateTimePicker from '@react-native-community/datetimepicker';
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -23,11 +24,36 @@ export const DateText = styled.Text`
   margin-left: 15px;
 `;
 
+export const HourList = styled.FlatList.attrs({
+  numColumns: 2,
+  showsVerticalScrollIndicator: false,
+})`
+  margin: 10px 0 0 0;
+  padding: 0 20px;
+`;
+
+export const Hour = styled(RectButton)`
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  flex: 1;
+  opacity: ${props => (props.enabled ? 1 : 0.6)};
+
+  align-items: center;
+  margin: 0 10px 20px;
+`;
+
+export const Title = styled.Text`
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+`;
+
 export const Picker = styled.View`
   background: #fff;
   padding: 15px 30px;
   border-radius: 4px;
-  margin: 20px;
+  margin: 0 30px;
 `;
 
 export const RNDateTimePicker = styled(DateTimePicker)`

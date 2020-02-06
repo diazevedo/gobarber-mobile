@@ -5,20 +5,38 @@ import { format, parse } from 'date-fns';
 import en from 'date-fns/locale/en-GB';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import api from '~/services/api';
+
 import {
   Container,
   DateButton,
   DateText,
+  HourList,
+  Hour,
+  Title,
   Picker,
   RNDateTimePicker,
 } from './styles';
 
-export default function SelectDateTime() {
+export default function SelectDateTime({ navigation }) {
   const [date, setDate] = useState(new Date());
-
   const [opened, setOpened] = useState(false);
+  const [hours, setHours] = useState([]);
 
-  useEffect(() => console.tron.log(date), [date]);
+  const provider = navigation.getParam('provider');
+
+  const loadAvailableHours = async () => {
+    const response = await api.get(`appointments/${provider.id}/availability`, {
+      params: {
+        date: date.getTime(),
+      },
+    });
+    setHours(response.data);
+  };
+
+  useEffect(() => {
+    loadAvailableHours();
+  }, [date]);
 
   const dateFormatted = useMemo(
     () => format(date, 'dd MMMM yyyy', { locale: en }),
@@ -29,6 +47,10 @@ export default function SelectDateTime() {
     setDate(dateTimeISO);
   };
 
+  const handleSelectHour = time => {
+    navigation.navigate('Confirm', { provider, time });
+  };
+
   return (
     <Background>
       <Container>
@@ -36,6 +58,20 @@ export default function SelectDateTime() {
           <Icon name="event" color="#fff" size={20} />
           <DateText>{dateFormatted}</DateText>
         </DateButton>
+
+        <HourList
+          data={hours}
+          keyExtractor={item => item.time}
+          renderItem={({ item }) => (
+            <Hour
+              enabled={item.available}
+              onPress={() => handleSelectHour(item.value)}
+            >
+              <Title>{item.time}</Title>
+            </Hour>
+          )}
+        />
+
         {opened && (
           <Picker>
             <RNDateTimePicker
