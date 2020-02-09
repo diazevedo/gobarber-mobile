@@ -1,4 +1,4 @@
-package com.reactnavigation.example;
+package com.gobarbermobile;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

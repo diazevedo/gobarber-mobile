@@ -1,0 +1,431 @@
+--------- beginning of main
+02-09 05:27:27.894   470   470 I Binder:470_5: type=1400 audit(0.0:10414): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:27:27.898   470   757 D WificondControl: Scan result ready event
+02-09 05:27:36.466   155   155 I <-host-14: type=1400 audit(0.0:10415): avc: denied { read } for path="socket:[35197]" dev="sockfs" ino=35197 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=tcp_socket permissive=1
+02-09 05:27:36.466   155   155 I ->host-14: type=1400 audit(0.0:10416): avc: denied { write } for path="socket:[35197]" dev="sockfs" ino=35197 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=tcp_socket permissive=1
+02-09 05:27:36.478   127   127 I logd.reader: type=1400 audit(0.0:10417): avc: denied { setopt } for path="/dev/socket/logdr" scontext=u:r:logd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+--------- beginning of system
+02-09 05:27:57.675   470   482 I ActivityManager: Killing 4129:com.gobarbermobile/u0a74 (adj 900): crash
+02-09 05:27:58.008   470   552 W AppOps  : Finishing op nesting under-run: uid 1000 pkg android code 24 time=0 duration=0 nesting=0
+02-09 05:27:58.026   375   375 I surfaceflinger: type=1400 audit(0.0:10418): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:surfaceflinger:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:28:00.002   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:28:00.002   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:28:19.529   470  1207 I ActivityManager: START u0 {act=android.settings.APPLICATION_DETAILS_SETTINGS dat=package:com.gobarbermobile flg=0x10008000 cmp=com.android.settings/.applications.InstalledAppDetails bnds=[751,1100][1411,1268]} from uid 1000
+02-09 05:28:20.303  4014  4014 W Settings: Unable to find info for package: null
+02-09 05:28:21.083  1275  1275 I Choreographer: Skipped 68 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:21.083  4014  4164 W TileUtils: Found com.android.settings.backup.BackupSettingsActivity for intent Intent { act=com.android.settings.action.SETTINGS pkg=com.android.settings } missing metadata com.android.settings.category
+02-09 05:28:21.642  4014  4014 W InstalledAppDetails: App is not explicitly stopped
+02-09 05:28:21.697  4014  4014 I com.android.settings: type=1400 audit(0.0:10420): avc: denied { lock } for comm=4173796E635461736B202335 path="/data/user_de/0/com.android.settings/databases/search_index.db" dev="sdb3" ino=81958 scontext=u:r:system_app:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+02-09 05:28:21.761  4014  4014 I com.android.settings: type=1400 audit(0.0:10421): avc: denied { write } for comm=4173796E635461736B202335 name="search_index.db-journal" dev="sdb3" ino=81959 scontext=u:r:system_app:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+02-09 05:28:21.782  4014  4166 D DatabaseIndexingManager: Indexing locale 'en_US' took 75 millis
+02-09 05:28:21.929   390   390 W Binder:390_2: type=1400 audit(0.0:10423): avc: granted { getattr } for path="/data/data/com.awesomeproject/cache/image_cache/v2.ols100.1/37/4rPiv3OmEgcRYqzzf2fjNvVB5lE.cnt" dev="sdb3" ino=81953 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:21.937   390   390 W Binder:390_2: type=1400 audit(0.0:10424): avc: granted { getattr } for path="/data/data/com.awesomeproject/cache/http-cache/journal" dev="sdb3" ino=81955 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:22.115  4014  4014 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1540 android.content.ContextWrapper.bindService:678 android.content.pm.permission.RuntimePermissionPresenter$RemoteService.processMessage:154 android.content.pm.permission.RuntimePermissionPresenter.getAppPermissions:118 com.android.settingslib.applications.PermissionsSummaryHelper.getPermissionSummary:34 
+02-09 05:28:22.149   470   470 I Binder:470_C: type=1400 audit(0.0:10434): avc: denied { write } for name="timerslack_ns" dev="proc" ino=40823 scontext=u:r:system_server:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:22.201   368   368 E hw-IPCThreadState: binder thread pool (1 threads) starved for 138 ms
+02-09 05:28:22.205   390   390 W Binder:390_3: type=1400 audit(0.0:10436): avc: granted { getattr } for path="/data/user_de/0/com.android.providers.telephony/databases/HbpcdLookup.db" dev="sdb3" ino=81791 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:22.205   390   390 W Binder:390_3: type=1400 audit(0.0:10437): avc: granted { getattr } for path="/data/user_de/0/com.android.providers.telephony/databases/HbpcdLookup.db-journal" dev="sdb3" ino=81792 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:22.281  4014  4014 D AppUtils: Have 0 number of activities in preferred list
+02-09 05:28:22.319  4014  4167 D DatabaseIndexingManager: Indexing locale 'en_US' took 88 millis
+02-09 05:28:22.313   390   390 W Binder:390_4: type=1400 audit(0.0:10444): avc: granted { getattr } for path="/data/data/com.android.providers.calendar/databases/calendar.db" dev="sdb3" ino=81868 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:22.313   390   390 W Binder:390_4: type=1400 audit(0.0:10445): avc: granted { getattr } for path="/data/data/com.android.providers.calendar/databases/calendar.db-journal" dev="sdb3" ino=81869 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:22.313   390   390 W Binder:390_4: type=1400 audit(0.0:10446): avc: granted { getattr } for path="/data/data/com.android.providers.calendar/shared_prefs/CalendarUpgradeReceiver.xml" dev="sdb3" ino=81878 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:22.319  4014  4167 D DatabaseIndexingManager: Indexing locale 'en_US' took 88 millis
+02-09 05:28:22.409   390   390 W Binder:390_2: type=1400 audit(0.0:10447): avc: granted { getattr } for path="/data/data/com.android.providers.media/databases/external.db" dev="sdb3" ino=81863 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:22.521   387   414 D genymotion_audio: out_write: pcm_write() with out_frames=557 frame_size=4 returned -EPIPE
+02-09 05:28:22.521   387   414 E AudioStreamOutSink: Error while writing data to HAL: -32
+02-09 05:28:22.939  1275  1275 I Choreographer: Skipped 82 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:23.445   390   390 W Binder:390_3: type=1400 audit(0.0:10459): avc: granted { getattr } for path="/data/data/com.gobarbermobile/lib" dev="sdb3" ino=81936 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:23.493   390   390 W Binder:390_3: type=1400 audit(0.0:10460): avc: granted { getattr } for path="/data/data/com.gobarbermobile/lib-main/dso_lock" dev="sdb3" ino=81964 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:23.501   390   390 W Binder:390_3: type=1400 audit(0.0:10461): avc: granted { getattr } for path="/data/data/com.gobarbermobile/lib-main/dso_state" dev="sdb3" ino=81965 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:23.501   390   390 W Binder:390_3: type=1400 audit(0.0:10462): avc: granted { getattr } for path="/data/data/com.gobarbermobile/lib-main/dso_deps" dev="sdb3" ino=81966 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:23.501   390   390 W Binder:390_3: type=1400 audit(0.0:10463): avc: granted { getattr } for path="/data/data/com.gobarbermobile/lib-main/dso_manifest" dev="sdb3" ino=81967 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:23.712  4014  4014 I Choreographer: Skipped 233 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:23.857   390   390 W Binder:390_3: type=1400 audit(0.0:10466): avc: granted { getattr } for path="/data/data/com.android.messaging/shared_prefs/bugle.xml" dev="sdb3" ino=81909 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:23.877   390   390 W Binder:390_2: type=1400 audit(0.0:10469): avc: granted { getattr } for path="/data/data/com.gobarbermobile/lib" dev="sdb3" ino=81936 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:23.877   390   390 W Binder:390_2: type=1400 audit(0.0:10470): avc: granted { getattr } for path="/data/data/com.gobarbermobile/lib-main/dso_lock" dev="sdb3" ino=81964 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:23.957   390   390 W Binder:390_1: type=1400 audit(0.0:10474): avc: granted { getattr } for path="/data/data/com.android.defcontainer/lib" dev="sdb3" ino=81458 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:23.969   390   390 W Binder:390_1: type=1400 audit(0.0:10475): avc: granted { getattr } for path="/data/user_de/0/com.android.defcontainer/lib" dev="sdb3" ino=81454 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:24.094   470  1156 E BluetoothAdapter: Bluetooth binder is null
+02-09 05:28:24.129   390   390 W Binder:390_3: type=1400 audit(0.0:10476): avc: granted { getattr } for path="/data/data/com.android.pacprocessor/lib" dev="sdb3" ino=81590 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:24.147   470   775 I ProcessStatsService: Added stats: 2020-02-09-02-18-00, over +3h1m59s998ms
+02-09 05:28:24.197  4014  4014 W com.android.settings: type=1400 audit(0.0:10477): avc: granted { read } for comm=4173796E635461736B202336 name="pagetypeinfo" dev="proc" ino=4026532026 scontext=u:r:system_app:s0 tcontext=u:object_r:proc:s0 tclass=file
+02-09 05:28:24.197  4014  4014 W com.android.settings: type=1400 audit(0.0:10478): avc: granted { read open } for comm=4173796E635461736B202336 path="/proc/pagetypeinfo" dev="proc" ino=4026532026 scontext=u:r:system_app:s0 tcontext=u:object_r:proc:s0 tclass=file
+02-09 05:28:24.379  4014  4167 W ProcStatsManager: No process com.android.defcontainer/10005 for service com.android.defcontainer.DefaultContainerService
+02-09 05:28:24.379  4014  4167 W ProcStatsManager: No process com.android.printspooler/10060 for service com.android.printspooler.model.PrintSpoolerService
+02-09 05:28:24.379  4014  4167 W ProcStatsManager: No process com.android.keychain/1000 for service com.android.keychain.KeyChainService
+02-09 05:28:24.379  4014  4167 W ProcStatsManager: No process com.android.gallery3d/10051 for service com.android.gallery3d.app.PackagesMonitor$AsyncService
+02-09 05:28:24.392   470  1156 E BatteryStatsService: modem info is invalid: ModemActivityInfo{ mTimestamp=0 mSleepTimeMs=0 mIdleTimeMs=0 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0 mEnergyUsed=0}
+02-09 05:28:24.510  4014  4031 I zygote  : IncrementDisableThreadFlip blocked for 7.753ms
+02-09 05:28:24.533   470   775 I ProcessStatsService: Added stats: 2020-02-09-02-18-00, over +3h1m59s998ms
+02-09 05:28:24.577   390   390 W Binder:390_4: type=1400 audit(0.0:10481): avc: granted { getattr } for path="/data/data/com.android.camera2/lib" dev="sdb3" ino=81609 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:24.577   390   390 W Binder:390_4: type=1400 audit(0.0:10482): avc: granted { getattr } for path="/data/data/com.android.camera2/shared_prefs/com.android.camera2_preferences.xml" dev="sdb3" ino=81886 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.589  4014  4014 W com.android.settings: type=1400 audit(0.0:10486): avc: granted { getattr } for comm=4173796E635461736B202336 path="/proc/pagetypeinfo" dev="proc" ino=4026532026 scontext=u:r:system_app:s0 tcontext=u:object_r:proc:s0 tclass=file
+02-09 05:28:24.629   390   390 W Binder:390_2: type=1400 audit(0.0:10487): avc: granted { getattr } for path="/data/data/com.android.nfc/lib" dev="sdb3" ino=81616 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:24.669   390   390 W Binder:390_1: type=1400 audit(0.0:10488): avc: granted { getattr } for path="/data/data/com.android.launcher3/shared_prefs/com.android.launcher3.prefs.xml" dev="sdb3" ino=81918 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.677  4014  4167 W ProcStatsManager: No process com.android.defcontainer/10005 for service com.android.defcontainer.DefaultContainerService
+02-09 05:28:24.679  4014  4025 I zygote  : Background concurrent copying GC freed 7510(568KB) AllocSpace objects, 4(192KB) LOS objects, 49% free, 4MB/9MB, paused 14.789ms total 198.150ms
+02-09 05:28:24.677   390   390 W Binder:390_1: type=1400 audit(0.0:10489): avc: granted { getattr } for path="/data/data/com.android.launcher3/shared_prefs/com.android.launcher3.managedusers.prefs.xml" dev="sdb3" ino=81830 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.685   390   390 W Binder:390_1: type=1400 audit(0.0:10490): avc: granted { getattr } for path="/data/data/com.android.launcher3/shared_prefs/com.android.launcher3.device.prefs.xml" dev="sdb3" ino=81831 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.685   390   390 W Binder:390_1: type=1400 audit(0.0:10491): avc: granted { getattr } for path="/data/data/com.android.launcher3/databases/launcher.db" dev="sdb3" ino=81828 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.685   390   390 W Binder:390_1: type=1400 audit(0.0:10492): avc: granted { getattr } for path="/data/data/com.android.launcher3/databases/launcher.db-journal" dev="sdb3" ino=81829 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.685   390   390 W Binder:390_1: type=1400 audit(0.0:10493): avc: granted { getattr } for path="/data/data/com.android.launcher3/databases/app_icons.db" dev="sdb3" ino=81843 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.685   390   390 W Binder:390_1: type=1400 audit(0.0:10494): avc: granted { getattr } for path="/data/data/com.android.launcher3/databases/app_icons.db-journal" dev="sdb3" ino=81852 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.685   390   390 W Binder:390_1: type=1400 audit(0.0:10495): avc: granted { getattr } for path="/data/data/com.android.launcher3/databases/widgetpreviews.db" dev="sdb3" ino=81873 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.685   390   390 W Binder:390_1: type=1400 audit(0.0:10496): avc: granted { getattr } for path="/data/data/com.android.launcher3/databases/widgetpreviews.db-journal" dev="sdb3" ino=81876 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.797   390   390 W Binder:390_1: type=1400 audit(0.0:10497): avc: granted { getattr } for path="/data/data/com.android.calendar/shared_prefs/com.android.calendar_preferences.xml" dev="sdb3" ino=81875 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.797   390   390 W Binder:390_1: type=1400 audit(0.0:10498): avc: granted { getattr } for path="/data/data/com.android.calendar/shared_prefs/_has_set_default_values.xml" dev="sdb3" ino=81874 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.797   390   390 W Binder:390_1: type=1400 audit(0.0:10499): avc: granted { getattr } for path="/data/data/com.android.calendar/shared_prefs/calendar_alerts.xml" dev="sdb3" ino=81884 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:24.869   390   390 W Binder:390_2: type=1400 audit(0.0:10500): avc: granted { getattr } for path="/data/data/com.android.printspooler/lib" dev="sdb3" ino=81638 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:25.428  1275  1275 I Choreographer: Skipped 136 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:25.601   390   390 W Binder:390_4: type=1400 audit(0.0:10515): avc: granted { getattr } for path="/data/data/com.android.gallery3d/lib" dev="sdb3" ino=81674 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:25.605   390   390 W Binder:390_4: type=1400 audit(0.0:10516): avc: granted { getattr } for path="/data/data/com.android.gallery3d/shared_prefs/com.android.gallery3d_preferences.xml" dev="sdb3" ino=81963 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:25.680   470   492 W zygote  : Long monitor contention with owner Binder:470_9 (1240) at int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.util.MergedConfiguration, android.view.Surface)(WindowManagerService.java:1898) waiters=0 in void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message) for 1.929s
+02-09 05:28:25.680   470   624 W zygote  : Long monitor contention with owner Binder:470_9 (1240) at int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.util.MergedConfiguration, android.view.Surface)(WindowManagerService.java:1898) waiters=1 in void com.android.server.wm.WindowManagerService.removeObsoleteTaskFiles(android.util.ArraySet, int[]) for 1.098s
+02-09 05:28:25.682   470   757 W zygote  : Long monitor contention with owner LazyTaskWriterThread (624) at void com.android.server.am.TaskPersister$LazyTaskWriterThread.run()(TaskPersister.java:659) waiters=1 in android.content.pm.UserInfo com.android.server.am.UserController.getCurrentUser() for 894ms
+02-09 05:28:25.707   470   485 W zygote  : Long monitor contention with owner LazyTaskWriterThread (624) at void com.android.server.am.TaskPersister$LazyTaskWriterThread.run()(TaskPersister.java:659) waiters=0 in void com.android.server.am.ActivityStack$ActivityStackHandler.handleMessage(android.os.Message) for 1.051s
+02-09 05:28:25.756  4014  4167 W TileUtils: Found com.android.settings.backup.BackupSettingsActivity for intent Intent { act=com.android.settings.action.SETTINGS pkg=com.android.settings } missing metadata com.android.settings.category
+02-09 05:28:25.861   390   390 W Binder:390_1: type=1400 audit(0.0:10517): avc: granted { getattr } for path="/data/user_de/0/com.android.packageinstaller/no_backup/uninstall_results.xml" dev="sdb3" ino=81969 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:25.977   390   390 W Binder:390_3: type=1400 audit(0.0:10518): avc: granted { getattr } for path="/data/data/com.svox.pico/lib" dev="sdb3" ino=81684 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:26.177   390   390 W Binder:390_4: type=1400 audit(0.0:10519): avc: granted { getattr } for path="/data/data/com.android.inputmethod.latin/lib" dev="sdb3" ino=81517 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:26.185   390   390 W Binder:390_4: type=1400 audit(0.0:10523): avc: granted { getattr } for path="/data/user_de/0/com.android.inputmethod.latin/databases/pendingUpdates" dev="sdb3" ino=81795 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.185   390   390 W Binder:390_4: type=1400 audit(0.0:10524): avc: granted { getattr } for path="/data/user_de/0/com.android.inputmethod.latin/databases/pendingUpdates-journal" dev="sdb3" ino=81796 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.185   390   390 W Binder:390_4: type=1400 audit(0.0:10525): avc: granted { getattr } for path="/data/user_de/0/com.android.inputmethod.latin/databases/pendingUpdates.com.android.inputmethod.latin" dev="sdb3" ino=81797 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.185   390   390 W Binder:390_4: type=1400 audit(0.0:10526): avc: granted { getattr } for path="/data/user_de/0/com.android.inputmethod.latin/databases/pendingUpdates.com.android.inputmethod.latin-journal" dev="sdb3" ino=81798 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.314   366   366 E hw-IPCThreadState: binder thread pool (1 threads) starved for 256 ms
+02-09 05:28:26.474   639   639 I Choreographer: Skipped 30 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:26.485   390   390 W Binder:390_4: type=1400 audit(0.0:10527): avc: granted { getattr } for path="/data/data/jp.co.omronsoft.openwnn/lib" dev="sdb3" ino=81712 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:26.751   366   366 E hw-IPCThreadState: binder thread pool (1 threads) starved for 209 ms
+02-09 05:28:26.765   390   390 W Binder:390_2: type=1400 audit(0.0:10528): avc: granted { getattr } for path="/data/user_de/0/com.android.settings/databases/search_index.db" dev="sdb3" ino=81958 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10530): avc: granted { getattr } for path="/data/data/com.android.email/shared_prefs/UnifiedEmail.xml" dev="sdb3" ino=81897 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10531): avc: granted { getattr } for path="/data/data/com.android.email/shared_prefs/AndroidMail.Main.xml" dev="sdb3" ino=81896 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10532): avc: granted { getattr } for path="/data/data/com.android.email/shared_prefs/MailAppProvider.xml" dev="sdb3" ino=81898 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10533): avc: granted { getattr } for path="/data/data/com.android.email/files/deviceName" dev="sdb3" ino=81890 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10534): avc: granted { getattr } for path="/data/data/com.android.email/databases/EmailProvider.db" dev="sdb3" ino=81892 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10535): avc: granted { getattr } for path="/data/data/com.android.email/databases/EmailProvider.db-journal" dev="sdb3" ino=81893 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10536): avc: granted { getattr } for path="/data/data/com.android.email/databases/EmailProviderBody.db" dev="sdb3" ino=81894 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:26.961   390   390 W Binder:390_1: type=1400 audit(0.0:10537): avc: granted { getattr } for path="/data/data/com.android.email/databases/EmailProviderBody.db-journal" dev="sdb3" ino=81895 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.009   390   390 W Binder:390_3: type=1400 audit(0.0:10538): avc: granted { getattr } for path="/data/user_de/0/com.android.phone/shared_prefs/_has_set_default_values.xml" dev="sdb3" ino=81811 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:27.017   390   390 W Binder:390_3: type=1400 audit(0.0:10539): avc: granted { getattr } for path="/data/user_de/0/com.android.phone/shared_prefs/com.android.phone_preferences.xml" dev="sdb3" ino=81885 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:27.017   390   390 W Binder:390_3: type=1400 audit(0.0:10540): avc: granted { getattr } for path="/data/user_de/0/com.android.phone/files/carrierconfig-com.android.carrierconfig-89014103211118510720.xml" dev="sdb3" ino=81860 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:27.113   390   390 W Binder:390_3: type=1400 audit(0.0:10541): avc: granted { getattr } for path="/data/data/com.android.providers.userdictionary/databases/user_dict.db" dev="sdb3" ino=81961 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.113   390   390 W Binder:390_3: type=1400 audit(0.0:10542): avc: granted { getattr } for path="/data/data/com.android.providers.userdictionary/databases/user_dict.db-journal" dev="sdb3" ino=81962 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.205   390   390 W Binder:390_3: type=1400 audit(0.0:10543): avc: granted { getattr } for path="/data/user_de/0/com.android.deskclock/databases/alarms.db" dev="sdb3" ino=334121 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.209   390   390 W Binder:390_3: type=1400 audit(0.0:10544): avc: granted { getattr } for path="/data/user_de/0/com.android.deskclock/databases/alarms.db-journal" dev="sdb3" ino=334122 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.209   390   390 W Binder:390_3: type=1400 audit(0.0:10545): avc: granted { getattr } for path="/data/user_de/0/com.android.deskclock/shared_prefs/com.android.deskclock_preferences.xml" dev="sdb3" ino=334120 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.221   390   390 W Binder:390_2: type=1400 audit(0.0:10546): avc: granted { getattr } for path="/data/user_de/0/com.android.systemui/shared_prefs/plugin_prefs.xml" dev="sdb3" ino=81806 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.221   390   390 W Binder:390_2: type=1400 audit(0.0:10547): avc: granted { getattr } for path="/data/user_de/0/com.android.systemui/shared_prefs/com.android.systemui.xml" dev="sdb3" ino=81812 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.281   390   390 W Binder:390_4: type=1400 audit(0.0:10548): avc: granted { getattr } for path="/data/data/com.genymotion.superuser/databases/su.sqlite" dev="sdb3" ino=81913 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:27.281   390   390 W Binder:390_4: type=1400 audit(0.0:10549): avc: granted { getattr } for path="/data/data/com.genymotion.superuser/databases/su.sqlite-journal" dev="sdb3" ino=81914 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:27.281   390   390 W Binder:390_4: type=1400 audit(0.0:10550): avc: granted { getattr } for path="/data/data/com.genymotion.superuser/databases/superuser.sqlite" dev="sdb3" ino=81915 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:27.281   390   390 W Binder:390_4: type=1400 audit(0.0:10551): avc: granted { getattr } for path="/data/data/com.genymotion.superuser/databases/superuser.sqlite-journal" dev="sdb3" ino=81916 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+02-09 05:28:27.329   390   390 W Binder:390_2: type=1400 audit(0.0:10552): avc: granted { getattr } for path="/data/data/com.android.bluetooth/lib" dev="sdb3" ino=81777 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:27.329   390   390 W Binder:390_2: type=1400 audit(0.0:10553): avc: granted { getattr } for path="/data/user_de/0/com.android.bluetooth/lib" dev="sdb3" ino=81773 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0 tclass=lnk_file
+02-09 05:28:27.421   390   390 W Binder:390_3: type=1400 audit(0.0:10554): avc: granted { getattr } for path="/data/data/com.android.providers.contacts/shared_prefs/com.android.providers.contacts_preferences.xml" dev="sdb3" ino=81832 scontext=u:r:installd:s0 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file
+02-09 05:28:27.625  4014  4036 E EGL_emulation: tid 4036: eglSurfaceAttrib(1210): error 0x3009 (EGL_BAD_MATCH)
+02-09 05:28:27.625  4014  4036 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xccd2f4a0, error=EGL_BAD_MATCH
+02-09 05:28:27.647  4014  4014 W InstalledAppDetails: App is not explicitly stopped
+02-09 05:28:27.694  4014  4014 D AppUtils: Have 0 number of activities in preferred list
+02-09 05:28:27.795  4014  4014 I Choreographer: Skipped 244 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:28.224   639   639 I Choreographer: Skipped 102 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:28.265   368   368 I wifi@1.0-servic: type=1400 audit(0.0:10567): avc: denied { write } for scontext=u:r:hal_wifi_default:s0 tcontext=u:r:hal_wifi_default:s0 tclass=netlink_route_socket permissive=1
+02-09 05:28:28.265   368   368 I wifi@1.0-servic: type=1400 audit(0.0:10568): avc: denied { nlmsg_read } for scontext=u:r:hal_wifi_default:s0 tcontext=u:r:hal_wifi_default:s0 tclass=netlink_route_socket permissive=1
+02-09 05:28:28.265   368   368 I wifi@1.0-servic: type=1400 audit(0.0:10569): avc: denied { read } for scontext=u:r:hal_wifi_default:s0 tcontext=u:r:hal_wifi_default:s0 tclass=netlink_route_socket permissive=1
+02-09 05:28:29.239   470   492 E ViewRootImpl[settings]: Attempting to destroy the window while drawing!
+02-09 05:28:29.239   470   492 E ViewRootImpl[settings]:   window=android.view.ViewRootImpl@a558632, title=Splash Screen com.android.settings
+02-09 05:28:29.242   470   492 I ActivityManager: Displayed com.android.settings/.applications.InstalledAppDetails: +9s577ms
+02-09 05:28:29.488   470   552 I Choreographer: Skipped 592 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:29.505  4014  4014 I Choreographer: Skipped 30 frames!  The application may be doing too much work on its main thread.
+02-09 05:28:29.574   470   485 W ActivityManager: Launch timeout has expired, giving up wake lock!
+02-09 05:28:29.645   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:28:29.645   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:28:29.877   470   470 I ActivityManager: type=1400 audit(0.0:10570): avc: denied { write } for name="timerslack_ns" dev="proc" ino=18128 scontext=u:r:system_server:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:29.910   375   523 E SurfaceFlinger: Failed to find layer (com.android.launcher3/com.android.launcher3.Launcher#0) in layer parent (no-parent).
+02-09 05:28:31.626   470   775 E UserRestrictionsUtils: Unknown restriction: com.gobarbermobile
+02-09 05:28:31.628   470   650 I ActivityManager: START u0 {act=android.intent.action.UNINSTALL_PACKAGE dat=package:com.gobarbermobile cmp=com.android.packageinstaller/.UninstallerActivity (has extras)} from uid 1000
+02-09 05:28:31.633   470   470 I Binder:470_1: type=1400 audit(0.0:10571): avc: denied { write } for name="timerslack_ns" dev="proc" ino=46010 scontext=u:r:system_server:s0 tcontext=u:r:system_app:s0 tclass=file permissive=1
+02-09 05:28:31.775  3376  3423 E EGL_emulation: tid 3423: eglSurfaceAttrib(1210): error 0x3009 (EGL_BAD_MATCH)
+02-09 05:28:31.775  3376  3423 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdf6048c0, error=EGL_BAD_MATCH
+02-09 05:28:31.784   375   375 D SurfaceFlinger: duplicate layer name: changing com.android.packageinstaller/com.android.packageinstaller.UninstallerActivity to com.android.packageinstaller/com.android.packageinstaller.UninstallerActivity#1
+02-09 05:28:31.854  3376  3423 E EGL_emulation: tid 3423: eglSurfaceAttrib(1210): error 0x3009 (EGL_BAD_MATCH)
+02-09 05:28:31.854  3376  3423 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xce014be0, error=EGL_BAD_MATCH
+02-09 05:28:31.986   470   492 I ActivityManager: Displayed com.android.packageinstaller/.UninstallerActivity: +303ms
+02-09 05:28:34.854   470  1156 I ActivityManager: START u0 {flg=0x2000000 cmp=com.android.packageinstaller/.UninstallUninstalling (has extras)} from uid 10018
+02-09 05:28:34.909   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:28:34.909   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:28:34.942   470   485 I ActivityManager: Force stopping com.gobarbermobile appid=10074 user=0: deletePackageX
+02-09 05:28:34.945  3376  3376 I com.android.packageinstaller: type=1400 audit(0.0:10578): avc: denied { unlink } for comm=4173796E635461736B202336 name="uninstall_results.xml.bak" dev="sdb3" ino=81969 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.013   391   391 I keystore: type=1400 audit(0.0:10579): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:keystore:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:28:35.015   391   391 I keystore: clear_uid 10074
+02-09 05:28:35.030   470   526 D PackageManager: Ephemeral installer not found with new action; try old one
+02-09 05:28:35.031   470   526 D PackageManager: Clear ephemeral installer activity
+02-09 05:28:35.037   470   526 I zygote  : Waiting for a blocking GC Explicit
+02-09 05:28:35.052   470   526 I zygote  : WaitForGcToComplete blocked for 21.123ms for cause Explicit
+02-09 05:28:35.104  3376  3423 E EGL_emulation: tid 3423: eglSurfaceAttrib(1210): error 0x3009 (EGL_BAD_MATCH)
+02-09 05:28:35.104  3376  3423 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xce036560, error=EGL_BAD_MATCH
+02-09 05:28:35.152   375   375 D SurfaceFlinger: duplicate layer name: changing com.android.packageinstaller/com.android.packageinstaller.UninstallUninstalling to com.android.packageinstaller/com.android.packageinstaller.UninstallUninstalling#1
+02-09 05:28:35.192  3376  3423 E EGL_emulation: tid 3423: eglSurfaceAttrib(1210): error 0x3009 (EGL_BAD_MATCH)
+02-09 05:28:35.192  3376  3423 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xce0364e0, error=EGL_BAD_MATCH
+02-09 05:28:35.207   470   526 I zygote  : Explicit concurrent copying GC freed 17281(800KB) AllocSpace objects, 3(60KB) LOS objects, 42% free, 5MB/10MB, paused 565us total 154.115ms
+02-09 05:28:35.219   470   526 I ActivityManager: Force stopping com.gobarbermobile appid=10074 user=0: pkg removed
+02-09 05:28:35.256   470   492 I ActivityManager: Displayed com.android.packageinstaller/.UninstallUninstalling: +350ms
+02-09 05:28:35.253   639   639 I ndroid.systemui: type=1400 audit(0.0:10580): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:28:35.256   470   492 I ActivityManager: Displayed com.android.packageinstaller/.UninstallUninstalling: +350ms
+02-09 05:28:35.257   625   625 I ExecutorUtils: type=1400 audit(0.0:10581): avc: denied { lock } for path="/data/user_de/0/com.android.inputmethod.latin/databases/pendingUpdates" dev="sdb3" ino=81795 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.302   625   789 I LatinIME:LogUtils: Dictionary info: dictionary = main:en ; version = 54 ; date = 1414726273
+02-09 05:28:35.324   470   571 I InputReader: Reconfiguring input devices.  changes=0x00000010
+02-09 05:28:35.363   730   730 D CarrierSvcBindHelper: No carrier app for: 0
+02-09 05:28:35.361  2821  2821 I IntentService[K: type=1400 audit(0.0:10583): avc: denied { setattr } for name="grants.db" dev="sdb3" ino=81930 scontext=u:r:system_app:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+02-09 05:28:35.363   730   730 D CarrierSvcBindHelper: No carrier app for: 0
+02-09 05:28:35.367   470   470 D ZenLog  : config: removeAutomaticZenRules,ZenModeConfig[user=0,allowCalls=true,allowRepeatCallers=false,allowMessages=false,allowCallsFrom=contacts,allowMessagesFrom=contacts,allowReminders=true,allowEvents=true,allowWhenScreenOff=true,allowWhenScreenOn=true,automaticRules={d237402f0475408f9f421cddc817f244=ZenRule[enabled=false,snoozing=false,name=Weeknight,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=1.2.3.4.5&start=22.0&end=7.0&exitAtAlarm=false,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},id=d237402f0475408f9f421cddc817f244,creationTime=1581203802337,enabler=null], f91ba17a5e85475bab799041733688dd=ZenRule[enabled=false,snoozing=false,name=Event,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/event?userId=-10000&calendar=&reply=1,condition=Condition[id=condition://android/event?userId=-10000&calendar=&reply=1,summary=...,line1=...,line2=...,icon=0,state=STATE_FALSE,flags=2],component=ComponentInfo{android/com.android.server.notification.EventConditionProvider},id=f91ba17a5e85475bab799041733688dd,creationTime=1581203802339,enabler=null], b7b11f9d25ff42fdb204cca5ff131499=ZenRule[enabled=false,snoozing=false,name=Weekend,zenMode=ZEN_MODE_ALARMS,conditionId=condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false,condition=Condition[id=condition://android/schedule?days=6.7&start=23.30&end=10.0&exitAtAlarm=false,summary=...,line1=...,line2=...,icon=0,state=STATE_TRUE,flags=2],component=ComponentInfo{android/com.android.server.notification.ScheduleConditionProvider},id=b7b11f9d25ff42fdb204cca5ff131499,creationTime=1581203802338,enabler=null]},manualRule=null],Diff[]
+02-09 05:28:35.408  4014  4014 E AppInfoBase: Exception when retrieving package:com.gobarbermobile
+02-09 05:28:35.408  4014  4014 E AppInfoBase: android.content.pm.PackageManager$NameNotFoundException: com.gobarbermobile
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:168)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:139)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at com.android.settings.applications.AppInfoBase.retrieveAppEntry(AppInfoBase.java:146)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at com.android.settings.applications.InstalledAppDetails.refreshUi(InstalledAppDetails.java:694)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at com.android.settings.applications.InstalledAppDetails.onActivityResult(InstalledAppDetails.java:576)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.Activity.dispatchActivityResult(Activity.java:7262)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:4320)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:4367)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.ActivityThread.-wrap19(Unknown Source:0)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1649)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.os.Looper.loop(Looper.java:164)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at java.lang.reflect.Method.invoke(Native Method)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+02-09 05:28:35.408  4014  4014 E AppInfoBase: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+02-09 05:28:35.422  4014  4014 W InstalledAppDetails: App is not explicitly stopped
+02-09 05:28:35.429   470   470 I android.bg: type=1400 audit(0.0:10584): avc: denied { write } for name="timerslack_ns" dev="proc" ino=27769 scontext=u:r:system_server:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.432  4014  4014 D AppUtils: Have 0 number of activities in preferred list
+02-09 05:28:35.438  4014  4014 W asset   : Asset path /data/app/com.gobarbermobile-hOUs2O1U3JE9sjIMtUbvPw==/base.apk is neither a directory nor file (type=1).
+02-09 05:28:35.439  4014  4014 E ResourcesManager: failed to add asset path /data/app/com.gobarbermobile-hOUs2O1U3JE9sjIMtUbvPw==/base.apk
+02-09 05:28:35.439  4014  4014 W PackageManager: Failure retrieving resources for com.gobarbermobile
+02-09 05:28:35.439  4014  4014 W asset   : Asset path /data/app/com.gobarbermobile-hOUs2O1U3JE9sjIMtUbvPw==/base.apk is neither a directory nor file (type=1).
+02-09 05:28:35.439  4014  4014 E ResourcesManager: failed to add asset path /data/app/com.gobarbermobile-hOUs2O1U3JE9sjIMtUbvPw==/base.apk
+02-09 05:28:35.439  4014  4014 W PackageManager: Failure retrieving resources for com.gobarbermobile
+02-09 05:28:35.442   470   727 E RankingHelper: createDefaultChannelIfNeeded - Exception: android.content.pm.PackageManager$NameNotFoundException: com.gobarbermobile
+02-09 05:28:35.449  2689  2689 I IntentService[G: type=1400 audit(0.0:10585): avc: denied { write } for name="shared_prefs" dev="sdb3" ino=81922 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:28:35.449  2689  2689 I IntentService[G: type=1400 audit(0.0:10586): avc: denied { remove_name } for name="com.android.gallery3d_preferences.xml" dev="sdb3" ino=81963 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:28:35.449  2689  2689 I IntentService[G: type=1400 audit(0.0:10587): avc: denied { rename } for name="com.android.gallery3d_preferences.xml" dev="sdb3" ino=81963 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.449  2689  2689 I IntentService[G: type=1400 audit(0.0:10588): avc: denied { add_name } for name="com.android.gallery3d_preferences.xml.bak" scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:28:35.449  2689  2689 I IntentService[G: type=1400 audit(0.0:10589): avc: denied { create } for name="com.android.gallery3d_preferences.xml" scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.453  2689  2689 I IntentService[G: type=1400 audit(0.0:10590): avc: denied { write open } for path="/data/data/com.android.gallery3d/shared_prefs/com.android.gallery3d_preferences.xml" dev="sdb3" ino=81926 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.469  2689  2689 I IntentService[G: type=1400 audit(0.0:10591): avc: denied { setattr } for name="com.android.gallery3d_preferences.xml" dev="sdb3" ino=81926 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.469  2689  2689 I IntentService[G: type=1400 audit(0.0:10592): avc: denied { unlink } for name="com.android.gallery3d_preferences.xml.bak" dev="sdb3" ino=81963 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.455   470  1243 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.gobarbermobile flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+02-09 05:28:35.469  2689  2689 I IntentService[G: type=1400 audit(0.0:10591): avc: denied { setattr } for name="com.android.gallery3d_preferences.xml" dev="sdb3" ino=81926 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.469  2689  2689 I IntentService[G: type=1400 audit(0.0:10592): avc: denied { unlink } for name="com.android.gallery3d_preferences.xml.bak" dev="sdb3" ino=81963 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.510   470   470 D ZenLog  : set_zen_mode: off,removeAutomaticZenRules
+02-09 05:28:35.545  3437  3437 I oid.documentsui: type=1400 audit(0.0:10593): avc: denied { lock } for path="/data/data/com.android.documentsui/databases/lastAccess.db" dev="sdb3" ino=81924 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: Error getting package:com.gobarbermobile
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: android.content.pm.PackageManager$NameNotFoundException: com.gobarbermobile
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:168)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:139)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at com.android.packageinstaller.permission.service.RuntimePermissionPresenterServiceImpl.onGetAppPermissions(RuntimePermissionPresenterServiceImpl.java:43)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at android.permissionpresenterservice.RuntimePermissionPresenterService$MyHandler.handleMessage(RuntimePermissionPresenterService.java:106)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at android.os.Looper.loop(Looper.java:164)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at java.lang.reflect.Method.invoke(Native Method)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+02-09 05:28:35.621  3376  3376 E PermissionPresenter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+02-09 05:28:35.641   372   372 I lmkd    : type=1400 audit(0.0:10594): avc: denied { read } for path="socket:[12893]" dev="sockfs" ino=12893 scontext=u:r:lmkd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+02-09 05:28:35.685  1275  1275 I launcher-loader: type=1400 audit(0.0:10595): avc: denied { read } for name="databases" dev="sdb3" ino=81822 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:28:35.685  1275  1275 I launcher-loader: type=1400 audit(0.0:10596): avc: denied { open } for path="/data/data/com.android.launcher3/databases" dev="sdb3" ino=81822 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:28:35.769  1275  1371 E EGL_emulation: tid 1371: eglSurfaceAttrib(1210): error 0x3009 (EGL_BAD_MATCH)
+02-09 05:28:35.769  1275  1371 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xcdd15140, error=EGL_BAD_MATCH
+02-09 05:28:35.969   470   552 I WindowManager: Failed to capture screenshot of Token{8e1a12c ActivityRecord{d3ba0df u0 com.android.packageinstaller/.UninstallerActivity t34 f}} appWin=Window{92ad456 u0 com.android.packageinstaller/com.android.packageinstaller.UninstallerActivity} drawState=4
+02-09 05:28:35.977  1275  1280 I zygote  : Do partial code cache collection, code=248KB, data=166KB
+02-09 05:28:35.985  1275  1280 I zygote  : After code cache collection, code=241KB, data=162KB
+02-09 05:28:35.990  1275  1280 I zygote  : Increasing code cache capacity to 1024KB
+02-09 05:28:36.277  1275  1371 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+02-09 05:28:45.569   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:28:45.569   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:29:02.405  4184  4184 I adbd    : type=1400 audit(0.0:10597): avc: denied { ioctl } for path="/dev/pts/1" dev="devpts" ino=4 ioctlcmd=540e scontext=u:r:init:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+02-09 05:29:02.409  4184  4184 I sh      : type=1400 audit(0.0:10598): avc: denied { getattr } for path="/dev/pts/1" dev="devpts" ino=4 scontext=u:r:init:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+02-09 05:29:02.413  4184  4184 I sh      : type=1400 audit(0.0:10599): avc: denied { execute_no_trans } for path="/system/bin/am" dev="sda6" ino=328 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+02-09 05:29:02.437  4186  4186 I cmd     : type=1400 audit(0.0:10600): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:servicemanager:s0 tclass=binder permissive=1
+02-09 05:29:02.505   155   155 I /sbin/adbd: type=1400 audit(0.0:10608): avc: denied { write } for comm=73657276696365203338 name="tmp" dev="sdb3" ino=627090 scontext=u:r:init:s0 tcontext=u:object_r:shell_data_file:s0 tclass=dir permissive=1
+02-09 05:29:02.505   155   155 I /sbin/adbd: type=1400 audit(0.0:10609): avc: denied { add_name } for comm=73657276696365203338 name="app-debug.apk" scontext=u:r:init:s0 tcontext=u:object_r:shell_data_file:s0 tclass=dir permissive=1
+02-09 05:29:02.505   155   155 I /sbin/adbd: type=1400 audit(0.0:10610): avc: denied { create } for comm=73657276696365203338 name="app-debug.apk" scontext=u:r:init:s0 tcontext=u:object_r:shell_data_file:s0 tclass=file permissive=1
+02-09 05:29:02.509   155   155 I /sbin/adbd: type=1400 audit(0.0:10612): avc: denied { setattr } for comm=73657276696365203338 name="app-debug.apk" dev="sdb3" ino=627091 scontext=u:r:init:s0 tcontext=u:object_r:shell_data_file:s0 tclass=file permissive=1
+02-09 05:29:05.305   155   155 I /sbin/adbd: type=1400 audit(0.0:10613): avc: denied { setfcap } for comm=73657276696365203338 capability=31 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+02-09 05:29:05.325  4191  4191 I app_process: type=1400 audit(0.0:10614): avc: denied { read write } for path="/dev/pts/1" dev="devpts" ino=4 scontext=u:r:zygote:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+02-09 05:29:05.541  4191  4191 I app_process: type=1400 audit(0.0:10615): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:zygote:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:29:05.545  4191  4191 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+02-09 05:29:05.584  4191  4191 W app_process: Unexpected CPU variant for X86 using defaults: x86
+02-09 05:29:05.602  4191  4191 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+02-09 05:29:05.609  4191  4191 I main    : type=1400 audit(0.0:10627): avc: denied { read } for name="app-debug.apk" dev="sdb3" ino=627091 scontext=u:r:zygote:s0 tcontext=u:object_r:shell_data_file:s0 tclass=file permissive=1
+02-09 05:29:05.609  4191  4191 I main    : type=1400 audit(0.0:10628): avc: denied { open } for path="/data/local/tmp/app-debug.apk" dev="sdb3" ino=627091 scontext=u:r:zygote:s0 tcontext=u:object_r:shell_data_file:s0 tclass=file permissive=1
+02-09 05:29:05.621   470   470 W Binder:470_4: type=1400 audit(0.0:10629): avc: granted { use } for path="socket:[49122]" dev="sockfs" ino=49122 scontext=u:r:zygote:s0 tcontext=u:r:system_server:s0 tclass=fd
+02-09 05:29:05.621   470   470 I Binder:470_4: type=1400 audit(0.0:10630): avc: denied { read write } for path="socket:[49122]" dev="sockfs" ino=49122 scontext=u:r:zygote:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=1
+02-09 05:29:06.009   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:29:06.009   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:29:06.022   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:29:06.023   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:29:06.040   470   526 I PackageManager.DexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/vmdl1140640914.tmp/base.apk pkg=com.gobarbermobile isa=x86 dexoptFlags=boot_complete,debuggable,public target-filter=quicken oatDir=/data/app/vmdl1140640914.tmp/oat sharedLibraries=null
+02-09 05:29:06.049  4203  4203 W dex2oat : Unexpected CPU variant for X86 using defaults: x86
+02-09 05:29:06.049  4203  4203 W dex2oat : Mismatch between dex2oat instruction set features (ISA: X86 Feature string: -ssse3,-sse4.1,-sse4.2,-avx,-avx2,-popcnt) and those of dex2oat executable (ISA: X86 Feature string: ssse3,-sse4.1,-sse4.2,-avx,-avx2,-popcnt) for the command line:
+02-09 05:29:06.049  4203  4203 W dex2oat : /system/bin/dex2oat --zip-fd=7 --zip-location=base.apk --input-vdex-fd=-1 --output-vdex-fd=9 --oat-fd=8 --oat-location=/data/app/vmdl1140640914.tmp/oat/x86/base.odex --instruction-set=x86 --instruction-set-variant=x86 --instruction-set-features=default --runtime-arg -Xms64m --runtime-arg -Xmx512m --compiler-filter=quicken --swap-fd=10 --debuggable --classpath-dir=/data/app/vmdl1140640914.tmp
+02-09 05:29:06.050  4203  4203 I dex2oat : /system/bin/dex2oat --input-vdex-fd=-1 --output-vdex-fd=9 --compiler-filter=quicken --debuggable --classpath-dir=/data/app/vmdl1140640914.tmp
+02-09 05:29:06.823  4203  4203 I dex2oat : dex2oat took 773.637ms (2.303s cpu) (threads: 4) arena alloc=5KB (5256B) java alloc=4MB (4222392B) native alloc=5MB (6135376B) free=3MB (3432880B)
+02-09 05:29:06.828   470   526 W PackageManager: No settings package for com.gobarbermobile. Scan needed.
+02-09 05:29:06.852   470   526 D PackageManager: Ephemeral installer not found with new action; try old one
+02-09 05:29:06.852   470   526 D PackageManager: Clear ephemeral installer activity
+02-09 05:29:06.853   390  2682 E         : Couldn't opendir /data/app/vmdl1140640914.tmp: No such file or directory
+02-09 05:29:06.853   390  2682 E installd: Failed to delete /data/app/vmdl1140640914.tmp: No such file or directory
+02-09 05:29:06.859  4191  4191 I Pm      : Package com.gobarbermobile installed in 1256 ms
+02-09 05:29:06.860   470  1207 D PackageInstaller: Ignoring abandon after commit relinquished control
+02-09 05:29:06.862  4191  4191 I app_process: System.exit called, status: 0
+02-09 05:29:06.862  4191  4191 I AndroidRuntime: VM exiting with result code 0.
+02-09 05:29:06.865   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:29:06.865   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:29:06.869   730   730 D ImsResolver: maybeAddedImsService, packageName: com.gobarbermobile
+02-09 05:29:06.878   470   571 I InputReader: Reconfiguring input devices.  changes=0x00000010
+02-09 05:29:06.885   470   727 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.gobarbermobile flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+02-09 05:29:06.894   470  1243 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.gobarbermobile flg=0x4000010 (has extras) } to com.svox.pico/.VoiceDataInstallerReceiver
+02-09 05:29:06.896   470   470 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@ALs
+02-09 05:29:06.908   470   484 W VoiceInteractionManagerService: no available voice recognition services found for user 0
+02-09 05:29:06.916   730   730 D CarrierSvcBindHelper: No carrier app for: 0
+02-09 05:29:06.921   730   730 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+02-09 05:29:06.929  4214  4214 I rm      : type=1400 audit(0.0:11381): avc: denied { getattr } for path="/data/local/tmp/app-debug.apk" dev="sdb3" ino=627091 scontext=u:r:toolbox:s0 tcontext=u:object_r:shell_data_file:s0 tclass=file permissive=1
+02-09 05:29:06.929  4214  4214 I rm      : type=1400 audit(0.0:11382): avc: denied { write } for name="app-debug.apk" dev="sdb3" ino=627091 scontext=u:r:toolbox:s0 tcontext=u:object_r:shell_data_file:s0 tclass=file permissive=1
+02-09 05:29:06.929  4214  4214 I rm      : type=1400 audit(0.0:11383): avc: denied { dac_override } for capability=1 scontext=u:r:toolbox:s0 tcontext=u:r:toolbox:s0 tclass=capability permissive=1
+02-09 05:29:06.929  4214  4214 I rm      : type=1400 audit(0.0:11384): avc: denied { write } for name="tmp" dev="sdb3" ino=627090 scontext=u:r:toolbox:s0 tcontext=u:object_r:shell_data_file:s0 tclass=dir permissive=1
+02-09 05:29:06.929  4214  4214 I rm      : type=1400 audit(0.0:11385): avc: denied { remove_name } for name="app-debug.apk" dev="sdb3" ino=627091 scontext=u:r:toolbox:s0 tcontext=u:object_r:shell_data_file:s0 tclass=dir permissive=1
+02-09 05:29:06.929  4214  4214 I rm      : type=1400 audit(0.0:11386): avc: denied { unlink } for name="app-debug.apk" dev="sdb3" ino=627091 scontext=u:r:toolbox:s0 tcontext=u:object_r:shell_data_file:s0 tclass=file permissive=1
+02-09 05:29:07.425  4217  4217 I cmd     : type=1400 audit(0.0:11389): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:servicemanager:s0 tclass=binder permissive=1
+02-09 05:29:07.430   470   482 I ActivityManager: START u0 {flg=0x10000000 cmp=com.gobarbermobile/.MainActivity} from uid 0
+02-09 05:29:07.433  1275  1275 I droid.launcher3: type=1400 audit(0.0:11392): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:29:07.451   470   775 I ActivityManager: Start proc 4219:com.gobarbermobile/u0a75 for activity com.gobarbermobile/.MainActivity
+02-09 05:29:07.472  4219  4219 I zygote  : Late-enabling -Xcheck:jni
+02-09 05:29:07.490  4219  4219 W zygote  : Unexpected CPU variant for X86 using defaults: x86
+02-09 05:29:07.901  4219  4219 I .gobarbermobile: type=1400 audit(0.0:11398): avc: denied { write } for name="com.gobarbermobile" dev="sdb3" ino=81927 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=dir permissive=1
+02-09 05:29:07.901  4219  4219 I .gobarbermobile: type=1400 audit(0.0:11399): avc: denied { add_name } for name="lib-main" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=dir permissive=1
+02-09 05:29:07.901  4219  4219 I .gobarbermobile: type=1400 audit(0.0:11400): avc: denied { create } for name="lib-main" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:29:07.901  4219  4219 I .gobarbermobile: type=1400 audit(0.0:11401): avc: denied { write } for name="lib-main" dev="sdb3" ino=81926 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:29:07.901  4219  4219 I .gobarbermobile: type=1400 audit(0.0:11402): avc: denied { add_name } for name="dso_lock" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=dir permissive=1
+02-09 05:29:07.901  4219  4219 I .gobarbermobile: type=1400 audit(0.0:11403): avc: denied { create } for name="dso_lock" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:29:07.901  4219  4219 I .gobarbermobile: type=1400 audit(0.0:11404): avc: denied { write open } for path="/data/data/com.gobarbermobile/lib-main/dso_lock" dev="sdb3" ino=81965 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0:c512,c768 tclass=file permissive=1
+02-09 05:29:07.893  4219  4219 D SoLoader: init start
+02-09 05:29:07.899  4219  4219 D SoLoader: adding system library source: /vendor/lib
+02-09 05:29:07.899  4219  4219 D SoLoader: adding system library source: /system/lib
+02-09 05:29:07.900  4219  4219 D SoLoader: adding application source: com.facebook.soloader.DirectorySoSource[root = /data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/lib/x86 flags = 0]
+02-09 05:29:07.900  4219  4219 D SoLoader: adding backup source from : com.facebook.soloader.ApkSoSource[root = /data/data/com.gobarbermobile/lib-main flags = 1]
+02-09 05:29:07.903  4219  4219 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /system/lib flags = 2]
+02-09 05:29:07.903  4219  4219 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /system/vendor/lib flags = 2]
+02-09 05:29:07.903  4219  4219 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/lib/x86 flags = 0]
+02-09 05:29:07.903  4219  4219 D SoLoader: Preparing SO source: com.facebook.soloader.ApkSoSource[root = /data/data/com.gobarbermobile/lib-main flags = 1]
+02-09 05:29:07.915  4219  4219 V fb-UnpackingSoSource: locked dso store /data/user/0/com.gobarbermobile/lib-main
+02-09 05:29:07.927  4219  4219 V fb-UnpackingSoSource: deps mismatch on deps store: regenerating
+02-09 05:29:07.927  4219  4219 V fb-UnpackingSoSource: so store dirty: regenerating
+02-09 05:29:07.909  4219  4219 I com.gobarbermobile: type=1400 audit(0.0:11405): avc: denied { write } for comm=45474C20496E6974 name="property_service" dev="tmpfs" ino=9302 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=1
+02-09 05:29:07.913  4219  4219 I com.gobarbermobile: type=1400 audit(0.0:11406): avc: denied { connectto } for comm=45474C20496E6974 path="/dev/socket/property_service" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+02-09 05:29:07.915  4219  4219 V fb-UnpackingSoSource: locked dso store /data/user/0/com.gobarbermobile/lib-main
+02-09 05:29:07.927  4219  4219 V fb-UnpackingSoSource: deps mismatch on deps store: regenerating
+02-09 05:29:07.927  4219  4219 V fb-UnpackingSoSource: so store dirty: regenerating
+02-09 05:29:07.954  4219  4234 I vndksupport: sphal namespace is not configured for this process. Loading /system/lib/egl/libGLES_emulation.so from the current namespace instead.
+02-09 05:29:07.969  4219  4234 I vndksupport: sphal namespace is not configured for this process. Loading /system/lib/egl/libEGL_emulation.so from the current namespace instead.
+02-09 05:29:07.989  4219  4234 I vndksupport: sphal namespace is not configured for this process. Loading /system/lib/egl/libGLESv1_CM_emulation.so from the current namespace instead.
+02-09 05:29:08.013  4219  4234 I vndksupport: sphal namespace is not configured for this process. Loading /system/lib/egl/libGLESv2_emulation.so from the current namespace instead.
+02-09 05:29:08.674  1275  1275 I Choreographer: Skipped 43 frames!  The application may be doing too much work on its main thread.
+02-09 05:29:09.000  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libc++_shared.so: deferring to libdir
+02-09 05:29:09.000  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libfb.so: deferring to libdir
+02-09 05:29:09.001  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libfolly_futures.so: deferring to libdir
+02-09 05:29:09.001  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libfolly_json.so: deferring to libdir
+02-09 05:29:09.004  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libglog.so: deferring to libdir
+02-09 05:29:09.005  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libglog_init.so: deferring to libdir
+02-09 05:29:09.007  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libimagepipeline.so: deferring to libdir
+02-09 05:29:09.008  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libjsc.so: deferring to libdir
+02-09 05:29:09.018  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libjscexecutor.so: deferring to libdir
+02-09 05:29:09.022  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libjsijniprofiler.so: deferring to libdir
+02-09 05:29:09.023  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libjsinspector.so: deferring to libdir
+02-09 05:29:09.025  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libnative-filters.so: deferring to libdir
+02-09 05:29:09.025  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libnative-imagetranscoder.so: deferring to libdir
+02-09 05:29:09.026  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libreactnativeblob.so: deferring to libdir
+02-09 05:29:09.026  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libreactnativejni.so: deferring to libdir
+02-09 05:29:09.026  4219  4219 D ApkSoSource: not allowing consideration of lib/x86/libyoga.so: deferring to libdir
+02-09 05:29:09.026  4219  4219 V fb-UnpackingSoSource: regenerating DSO store com.facebook.soloader.ApkSoSource
+02-09 05:29:09.030  4219  4219 V fb-UnpackingSoSource: Finished regenerating DSO store com.facebook.soloader.ApkSoSource
+02-09 05:29:09.030  4219  4219 V fb-UnpackingSoSource: starting syncer worker
+02-09 05:29:09.134  4219  4219 V fb-UnpackingSoSource: releasing dso store lock for /data/user/0/com.gobarbermobile/lib-main (from syncer thread)
+02-09 05:29:09.134  4219  4219 V fb-UnpackingSoSource: not releasing dso store lock for /data/user/0/com.gobarbermobile/lib-main (syncer thread started)
+02-09 05:29:09.134  4219  4219 D SoLoader: init finish: 4 SO sources prepared
+02-09 05:29:09.134  4219  4219 D SoLoader: init exiting
+02-09 05:29:09.143  4219  4219 W System.err: java.lang.ClassNotFoundException: com.facebook.flipper.ReactNativeFlipper
+02-09 05:29:09.151  4219  4219 W System.err: 	at java.lang.Class.classForName(Native Method)
+02-09 05:29:09.151  4219  4219 W System.err: 	at java.lang.Class.forName(Class.java:453)
+02-09 05:29:09.161  4219  4219 W System.err: 	at java.lang.Class.forName(Class.java:378)
+02-09 05:29:09.161  4219  4219 W System.err: 	at com.gobarbermobile.MainApplication.initializeFlipper(MainApplication.java:61)
+02-09 05:29:09.161  4219  4219 W System.err: 	at com.gobarbermobile.MainApplication.onCreate(MainApplication.java:46)
+02-09 05:29:09.161  4219  4219 W System.err: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1118)
+02-09 05:29:09.161  4219  4219 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5791)
+02-09 05:29:09.161  4219  4219 W System.err: 	at android.app.ActivityThread.-wrap1(Unknown Source:0)
+02-09 05:29:09.162  4219  4219 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1661)
+02-09 05:29:09.162  4219  4219 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+02-09 05:29:09.162  4219  4219 W System.err: 	at android.os.Looper.loop(Looper.java:164)
+02-09 05:29:09.162  4219  4219 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+02-09 05:29:09.162  4219  4219 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+02-09 05:29:09.162  4219  4219 W System.err: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+02-09 05:29:09.162  4219  4219 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+02-09 05:29:09.173  4219  4219 W System.err: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.facebook.flipper.ReactNativeFlipper" on path: DexPathList[[zip file "/data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/base.apk"],nativeLibraryDirectories=[/data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/lib/x86, /data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+02-09 05:29:09.175  4219  4219 W System.err: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:93)
+02-09 05:29:09.183  4219  4219 W System.err: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+02-09 05:29:09.183  4219  4219 W System.err: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+02-09 05:29:09.183  4219  4219 W System.err: 	... 15 more
+02-09 05:29:09.234  4219  4219 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: FATAL EXCEPTION: main
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: Process: com.gobarbermobile, PID: 4219
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.gobarbermobile/com.gobarbermobile.MainActivity}: java.lang.ClassNotFoundException: Didn't find class "com.gobarbermobile.MainActivity" on path: DexPathList[[zip file "/data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/base.apk"],nativeLibraryDirectories=[/data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/lib/x86, /data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2718)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2892)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1593)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.gobarbermobile.MainActivity" on path: DexPathList[[zip file "/data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/base.apk"],nativeLibraryDirectories=[/data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/lib/x86, /data/app/com.gobarbermobile--2j9Kq5EoKXvYI48tiTNjg==/base.apk!/lib/x86, /system/lib, /system/vendor/lib]]
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:93)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1173)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2708)
+02-09 05:29:09.249  4219  4219 E AndroidRuntime: 	... 9 more
+02-09 05:29:09.299   470  1240 W ActivityManager:   Force finishing activity com.gobarbermobile/.MainActivity
+02-09 05:29:09.428   470   486 I ActivityManager: Showing crash dialog for package com.gobarbermobile u0
+02-09 05:29:09.589   470   486 W Looper  : Dispatch took 223ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {4ab8609} cb=null msg=1
+02-09 05:29:09.821   470   485 W ActivityManager: Activity pause timeout for ActivityRecord{7653dd9 u0 com.gobarbermobile/.MainActivity t35 f}
+02-09 05:29:09.831   470   492 E ViewRootImpl[gobarbermobile]: Attempting to destroy the window while drawing!
+02-09 05:29:09.831   470   492 E ViewRootImpl[gobarbermobile]:   window=android.view.ViewRootImpl@fd76d98, title=Splash Screen com.gobarbermobile
+02-09 05:29:09.866   470   485 I WindowManager: Failed to capture screenshot of Token{dc9a39e ActivityRecord{7653dd9 u0 com.gobarbermobile/.MainActivity t35 f}} appWin=Window{d7a3e77 u0 Splash Screen com.gobarbermobile} drawState=1
+02-09 05:29:10.158   366   366 E hw-IPCThreadState: binder thread pool (1 threads) starved for 261 ms
+02-09 05:29:10.153   366   366 I allocator@2.0-s: type=1400 audit(0.0:11409): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:29:10.158   366   366 E hw-IPCThreadState: binder thread pool (1 threads) starved for 261 ms
+02-09 05:29:10.519   366   366 E hw-IPCThreadState: binder thread pool (1 threads) starved for 163 ms
+02-09 05:29:10.614   470   486 W Looper  : Dispatch took 1025ms on android.ui, h=Handler (android.view.Choreographer$FrameHandler) {a6d16ce} cb=android.view.Choreographer$FrameDisplayEventReceiver@eb9a9ef msg=0
+02-09 05:29:10.614   470   486 I Choreographer: Skipped 60 frames!  The application may be doing too much work on its main thread.
+02-09 05:29:13.446   470   552 I Choreographer: Skipped 356 frames!  The application may be doing too much work on its main thread.
+02-09 05:29:16.035   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:29:16.035   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:29:16.054   470   484 E memtrack: Couldn't load memtrack module
+02-09 05:29:16.054   470   484 W android.os.Debug: failed to get memory consumption info: -1
+02-09 05:29:19.848   470   485 W ActivityManager: Activity destroy timeout for ActivityRecord{7653dd9 u0 com.gobarbermobile/.MainActivity t35 f}
+02-09 05:29:41.292  4237  4237 I adbd    : type=1400 audit(0.0:11410): avc: denied { execute_no_trans } for path="/system/bin/sh" dev="sda6" ino=562 scontext=u:r:init:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+02-09 05:29:41.300  4237  4237 I logcat  : type=1400 audit(0.0:11411): avc: denied { read } for path="socket:[50674]" dev="sockfs" ino=50674 scontext=u:r:logpersist:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+02-09 05:29:41.304  4237  4237 I logcat  : type=1400 audit(0.0:11412): avc: denied { connectto } for path="/dev/socket/logd" scontext=u:r:logpersist:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+02-09 05:29:41.304   127   127 I logd.control: type=1400 audit(0.0:11413): avc: denied { accept } for path="/dev/socket/logd" scontext=u:r:logd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+02-09 05:29:41.304   127   127 I logd.control: type=1400 audit(0.0:11414): avc: denied { getopt } for path="/dev/socket/logd" scontext=u:r:logd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+02-09 05:29:41.304   127   127 I logd.control: type=1400 audit(0.0:11415): avc: denied { read } for path="socket:[50686]" dev="sockfs" ino=50686 scontext=u:r:logd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+02-09 05:29:41.404   400   400 I rild    : type=1400 audit(0.0:11416): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:rild:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+02-09 05:29:41.698   470  1510 I OpenGLRenderer: Initialized EGL, version 1.4
+02-09 05:29:41.698   470  1510 D OpenGLRenderer: Swap behavior 1
+02-09 05:29:41.701   470  1510 D EGL_emulation: eglCreateContext: 0xdf607e80: maj 2 min 0 rcv 2
+02-09 05:29:41.714   470  1510 E EGL_emulation: tid 1510: eglSurfaceAttrib(1210): error 0x3009 (EGL_BAD_MATCH)
+02-09 05:29:41.714   470  1510 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xcec1a7c0, error=EGL_BAD_MATCH
+02-09 05:29:41.820   470   486 W Looper  : Dispatch took 31206ms on android.ui, h=Handler (android.view.Choreographer$FrameHandler) {a6d16ce} cb=android.view.Choreographer$FrameDisplayEventReceiver@eb9a9ef msg=0
