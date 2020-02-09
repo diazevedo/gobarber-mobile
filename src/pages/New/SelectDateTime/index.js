@@ -44,8 +44,12 @@ export default function SelectDateTime({ navigation }) {
     [date]
   );
 
-  const onChangeDate = (timeStamp, dateISO) => {
-    setDate(dateISO);
+  const onChangeDate = (event, dateISO) => {
+    setOpened(false);
+
+    if (event.type === 'set') {
+      setDate(dateISO);
+    }
   };
 
   const handleSelectHour = time => {
@@ -81,7 +85,6 @@ export default function SelectDateTime({ navigation }) {
               minimumDate={new Date()}
               locale="en-GB"
               mode="date"
-              neutralButtonLabel="clear"
             />
           </Picker>
         )}
