@@ -45,7 +45,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* gobarberMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gobarberMobileTests.m; sourceTree = "<group>"; };
 		02A45D081074BCB692B13B3E /* Pods-gobarberMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gobarberMobile.release.xcconfig"; path = "Target Support Files/Pods-gobarberMobile/Pods-gobarberMobile.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* gobarberMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gobarberMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* GoBarber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBarber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = gobarberMobile/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = gobarberMobile/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -168,7 +168,6 @@
 				D170573094FC499E61725CA3 /* Pods-gobarberMobileTests.debug.xcconfig */,
 				C06DE88BD41F7885B56DB75D /* Pods-gobarberMobileTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,7 +189,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* gobarberMobile.app */,
+				13B07F961A680F5B00A75B9A /* GoBarber.app */,
 				00E356EE1AD99517003FC87E /* gobarberMobileTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* gobarberMobile-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* gobarberMobile-tvOSTests.xctest */,
@@ -238,7 +237,7 @@
 			);
 			name = gobarberMobile;
 			productName = gobarberMobile;
-			productReference = 13B07F961A680F5B00A75B9A /* gobarberMobile.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* GoBarber.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* gobarberMobile-tvOS */ = {
@@ -291,7 +290,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8J3L48V2GR;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 8J3L48V2GR;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -309,6 +312,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -632,6 +636,7 @@
 			baseConfigurationReference = D170573094FC499E61725CA3 /* Pods-gobarberMobileTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8J3L48V2GR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -656,6 +661,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 8J3L48V2GR;
 				INFOPLIST_FILE = gobarberMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -677,6 +683,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 8J3L48V2GR;
 				INFOPLIST_FILE = gobarberMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -684,8 +691,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = gobarberMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diazevedo.gobarbermobile;
+				PRODUCT_NAME = GoBarber;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -696,6 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8J3L48V2GR;
 				INFOPLIST_FILE = gobarberMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -703,8 +711,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = gobarberMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diazevedo.gobarbermobile;
+				PRODUCT_NAME = GoBarber;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
