@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, Platform } from 'react-native';
 import Background from '~/components/Background';
 import { format } from 'date-fns';
 import en from 'date-fns/locale/en-GB';
@@ -14,12 +14,12 @@ import {
   HourList,
   Hour,
   Title,
-  Picker,
   RNDateTimePicker,
 } from './styles';
 
 export default function SelectDateTime({ navigation }) {
   const [date, setDate] = useState(new Date());
+
   const [opened, setOpened] = useState(false);
   const [hours, setHours] = useState([]);
 
@@ -45,9 +45,14 @@ export default function SelectDateTime({ navigation }) {
   );
 
   const onChangeDate = (event, dateISO) => {
-    setOpened(false);
+    if (Platform.OS === 'android') {
+      setOpened(false);
+    }
 
-    if (event.type === 'set') {
+    if (
+      (Platform.OS === 'android' && event.type === 'set') ||
+      Platform.OS === 'ios'
+    ) {
       setDate(dateISO);
     }
   };
@@ -78,15 +83,13 @@ export default function SelectDateTime({ navigation }) {
         />
 
         {opened && (
-          <Picker>
-            <RNDateTimePicker
-              value={date}
-              onChange={onChangeDate}
-              minimumDate={new Date()}
-              locale="en-GB"
-              mode="date"
-            />
-          </Picker>
+          <RNDateTimePicker
+            value={date}
+            onChange={onChangeDate}
+            minimumDate={new Date()}
+            locale="en-GB"
+            mode="date"
+          />
         )}
       </Container>
     </Background>

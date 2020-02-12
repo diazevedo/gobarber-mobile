@@ -49,13 +49,4 @@ export const Title = styled.Text`
   color: #333;
 `;
 
-export const Picker = styled.View`
-  background: #fff;
-  padding: 15px 30px;
-  border-radius: 4px;
-  margin: 0 30px;
-`;
-
-export const RNDateTimePicker = styled(DateTimePicker)`
-  color: #8080;
-`;
+export const RNDateTimePicker = styled(DateTimePicker)``;
