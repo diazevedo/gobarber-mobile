@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Goarber</string>
+    <string  moduleConfig="true" name="CodePushDeploymentKey">9dn-jAYu9liU5SfOvSgpJQT4WwCV5HdGYCgBP8</string>
 </resources>

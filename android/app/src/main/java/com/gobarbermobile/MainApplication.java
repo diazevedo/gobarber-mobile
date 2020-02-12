@@ -1,5 +1,7 @@
 package com.gobarbermobile;
 
+import com.microsoft.codepush.react.CodePush;
+
 import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
@@ -14,6 +16,12 @@ public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost =
       new ReactNativeHost(this) {
+
+        @Override
+        protected String getJSBundleFile() {
+            return CodePush.getJSBundleFile();
+        }
+
         @Override
         public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
@@ -45,6 +53,7 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this); // Remove this line if you don't want Flipper enabled
   }
+
 
   /**
    * Loads Flipper in React Native templates.
