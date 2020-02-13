@@ -47,7 +47,7 @@ export default function SelectProvider({ navigation }) {
 }
 
 SelectProvider.navigationOptions = ({ navigation }) => ({
-  title: 'Select Provider',
+  title: 'Select the barber',
   headerLeft: () => (
     <TouchableOpacity
       onPress={() => {
