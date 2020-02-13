@@ -44,7 +44,7 @@ class Index extends Component {
     );
   }
 }
-export default Index;
-// export default CodePush({
-//   checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
-// })(Index);
+
+export default CodePush({
+  checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
+})(Index);
