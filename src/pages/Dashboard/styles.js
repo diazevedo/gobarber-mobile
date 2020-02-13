@@ -16,3 +16,13 @@ export const List = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
   contentContainerStyle: { padding: 30 },
 })``;
+
+export const ContainerTextNoAppointments = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TextAppointments = styled.Text`
+  color: #fff;
+`;

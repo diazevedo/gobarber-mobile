@@ -7,7 +7,13 @@ import api from '~/services/api';
 import Background from '~/components/Background';
 import Appointment from '~/components/Appointment';
 
-import { Container, Title, List } from './styles';
+import {
+  Container,
+  Title,
+  List,
+  TextAppointments,
+  ContainerTextNoAppointments,
+} from './styles';
 
 function Dashboard({ isFocused }) {
   const [appointments, setAppointments] = useState([]);
@@ -21,7 +27,9 @@ function Dashboard({ isFocused }) {
   };
 
   useEffect(() => {
-    if (isFocused) loadAppointments();
+    if (isFocused) {
+      loadAppointments();
+    }
   }, [isFocused]);
 
   const handleCancelAppointment = async id => {
@@ -48,19 +56,24 @@ function Dashboard({ isFocused }) {
     <Background>
       <Container>
         <Title>Appointments</Title>
-
-        <List
-          data={appointments}
-          onRefresh={refreshList}
-          refreshing={refreshing}
-          keyExtractor={item => String(item.id)}
-          renderItem={({ item }) => (
-            <Appointment
-              onCancel={() => handleCancelAppointment(item.id)}
-              data={item}
-            />
-          )}
-        />
+        {appointments.length > 0 ? (
+          <List
+            data={appointments}
+            onRefresh={refreshList}
+            refreshing={refreshing}
+            keyExtractor={item => String(item.id)}
+            renderItem={({ item }) => (
+              <Appointment
+                onCancel={() => handleCancelAppointment(item.id)}
+                data={item}
+              />
+            )}
+          />
+        ) : (
+          <ContainerTextNoAppointments>
+            <TextAppointments>No appointments</TextAppointments>
+          </ContainerTextNoAppointments>
+        )}
       </Container>
     </Background>
   );
