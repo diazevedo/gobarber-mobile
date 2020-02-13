@@ -2,6 +2,20 @@
 
 <p>An aplication for IOS/Android developed with React-Native. The app is focused on clients who are looking for barbers. It allows them to select the professional and the date and time for an appointment. The user can also manage their profile and cancel their appointments.
 </p>
+<table>
+  <tr><td colspan=2><strong>iOS</strong></td></tr>
+  <tr>
+    <td><p align="center"><img src="./assetsReadme/gobarberLogin.gif" width="200" height="400"/></p></td>
+    <td><p align="center"><img src="./assetsReadme/gobarberNavigation.gif" width="200" height="400"/></p></td>
+  </tr>
+</table>
 
-<img src="./assetsReadme/gobarberLogin.gif" height="400">
-<img src="./assetsReadme/gobarberNavigation.gif" height="400">
+## Installing / Running
+ 
+1. Clone it.
+2. Navigate to the folder `cd gobarber-mobile`;
+3. Run `yarn` or `npm install`;
+4. Run `react-native run-android` or `react-native run-ios`
+
+
+Feel free to make changes or suggest changes. Feedback is more than welcome. :smiley:
