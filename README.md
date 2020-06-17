@@ -1,21 +1,52 @@
-# App GoBarber
+<h1 align="center">
+  <img alt="Login page" src=".github/logo.svg" width="5%" align="center"/> </br>
+    GoBarber App
+</h1>
 
-<p>An aplication for IOS/Android developed with React-Native. The app is focused on clients who are looking for barbers. It allows them to select the professional and the date and time for an appointment. The user can also manage their profile and cancel their appointments.
-</p>
-<table>
-  <tr><td colspan=2><strong>iOS</strong></td></tr>
-  <tr>
-    <td><p align="center"><img src="./assetsReadme/gobarberLogin.gif" width="200" height="400"/></p></td>
-    <td><p align="center"><img src="./assetsReadme/gobarberNavigation.gif" width="200" height="400"/></p></td>
-  </tr>
-</table>
+<h2 align="center">
+  <img alt="Web login page" src=".github/gobarberLogin.gif" width="48%" />
+  <img alt="Mobile login page" src=".github/gobarberNavigation.gif" width="48%" />
+</h2>
 
-## Installing / Running
- 
-1. Clone it.
-2. Navigate to the folder `cd gobarber-mobile`;
-3. Run `yarn` or `npm install`;
-4. Run `react-native run-android` or `react-native run-ios`
+An aplication for IOS/Android developed with React-Native. The app is focused on clients who are looking for barbers. It allows them to select the professional and the date and time for an appointment. The user can also manage their profile and cancel appointments.
 
+It has the [backend](https://github.com/diazevedo/gobarber) and [frontend](https://github.com/diazevedo/gobarber-web).
 
-Feel free to make changes or suggest changes. Feedback is more than welcome. :smiley:
+### Technologies / Libraries
+
+- [React Native](http://facebook.github.io/react-native/)
+- [Redux](https://redux.js.org/)
+  - [Redux Saga](https://redux-saga.js.org/)
+- [React Navigation](https://reactnavigation.org/)
+- [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
+- [Axios](https://github.com/axios/axios)
+- [Prop Types](https://github.com/facebook/prop-types)
+- [Reactotron](https://github.com/infinitered/reactotron)
+  - [reactotron-react-native](https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md)
+  - [reactotron-redux](https://github.com/infinitered/reactotron/blob/master/docs/plugin-redux.md)
+  - [reactotron-redux-saga](https://github.com/infinitered/reactotron/blob/master/docs/plugin-redux-saga.md)
+
+### Requirements
+
+- [Node](https://nodejs.org/en/).
+- [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/) — I am using yarn commands over this step-by-step.
+- This project consumes the [API](https://github.com/diazevedo/gobarber) so have it running.
+
+```bash
+# Clone the project
+$ git clone https://github.com/diazevedo/gobarber-mobile.git
+
+# Go to the repository folder
+$ cd gobarber-mobile
+
+# Installing dependencies
+$ yarn or npm
+
+# Starting the project
+$ yarn start
+
+# To run on IOS
+yarn ios
+```
+
+:bulb: Feel free to comment or to contribute with this project any thoughts on how to improve are welcome.

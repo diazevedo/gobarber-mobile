@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { TouchableOpacity, Platform } from 'react-native';
-import Background from '~/components/Background';
 import { format } from 'date-fns';
 import en from 'date-fns/locale/en-GB';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Background from '~/components/Background';
 
 import api from '~/services/api';
 
@@ -37,7 +37,7 @@ export default function SelectDateTime({ navigation }) {
 
   useEffect(() => {
     loadAvailableHours();
-  }, [date]);
+  }, [date, loadAvailableHours]);
 
   const dateFormatted = useMemo(
     () => format(date, 'dd MMMM yyyy', { locale: en }),
