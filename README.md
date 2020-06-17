@@ -4,8 +4,8 @@
 </h1>
 
 <h2 align="center">
-  <img alt="Web login page" src=".github/gobarberLogin.gif" width="48%" />
-  <img alt="Mobile login page" src=".github/gobarberNavigation.gif" width="48%" />
+  <img alt="Web login page" src=".github/gobarberLogin.gif" width="35%" />
+  <img alt="Mobile login page" src=".github/gobarberNavigation.gif" width="35%" />
 </h2>
 
 An aplication for IOS/Android developed with React-Native. The app is focused on clients who are looking for barbers. It allows them to select the professional and the date and time for an appointment. The user can also manage their profile and cancel appointments.
