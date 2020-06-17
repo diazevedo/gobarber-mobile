@@ -8,6 +8,18 @@
   <img alt="Mobile login page" src=".github/gobarberNavigation.gif" width="35%" />
 </h2>
 
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/diazevedo/gobarber-mobile">
+
+  <a href="https://www.linkedin.com/in/diazevedo" target="_blank" >
+    <img alt="Made by Di Azevedo" src="https://img.shields.io/badge/made%20by-DiAzevedo-%2325b0e6">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
+</p>
+
+
 An aplication for IOS/Android developed with React-Native. The app is focused on clients who are looking for barbers. It allows them to select the professional and the date and time for an appointment. The user can also manage their profile and cancel appointments.
 
 It has the [backend](https://github.com/diazevedo/gobarber) and [frontend](https://github.com/diazevedo/gobarber-web).
